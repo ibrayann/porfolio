@@ -1,0 +1,39 @@
+---
+export const prerender = true;
+---
+
+<form action="/login" method="post">
+  <label for="username">Nombre de usuario:</label>
+  <input type="text" id="username" name="username" required />
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required />
+
+  <button type="submit">Iniciar sesión</button>
+</form>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  label,
+  input {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>

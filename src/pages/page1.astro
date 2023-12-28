@@ -1,0 +1,9 @@
+---
+if (!Astro.cookies.get("user")) {
+  console.log("holaaa");
+  return Astro.redirect("/login");
+}
+export const prerender = true;
+---
+
+HOLAAAAAAAA
